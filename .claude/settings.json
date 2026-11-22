@@ -1,0 +1,11 @@
+{
+  "enabledPlugins": {
+    "stardust@adobe-skills": true,
+    "aem-edge-delivery-services@adobe-skills": true,
+    "impeccable@impeccable": true
+  },
+  "extraKnownMarketplaces": {
+    "adobe-skills": { "source": { "source": "github", "repo": "adobe/skills" } },
+    "impeccable": { "source": { "source": "github", "repo": "pbakaus/impeccable" } }
+  }
+}

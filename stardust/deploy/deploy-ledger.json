@@ -1,0 +1,90 @@
+{
+  "/blog/index": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:20.786Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/blog/wifi-qr-code-for-events": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:20.786Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/blog/wifi-qr-code-for-home": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:20.786Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/blog/wifi-qr-code-for-rentals": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:24.951Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/faq": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:24.951Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/footer": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:24.951Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/index": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:27.216Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/nav": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:27.356Z",
+    "put": 200,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/pricing": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:27.637Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/privacy": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:29.702Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  },
+  "/terms": {
+    "status": "previewed",
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:29.880Z",
+    "put": 201,
+    "preview": 200,
+    "verify": "ok"
+  }
+}

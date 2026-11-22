@@ -3,3 +3,4 @@
 {"ts":"2026-11-22T19:18:50Z","skill":"stardust:direct","phase":"reasoning","event":"start"}
 {"ts":"2026-11-22T19:18:50Z","skill":"stardust:direct","phase":"reasoning","event":"end","detail":"greenfield direction written"}
 {"ts":"2026-11-22T19:32:40Z","skill":"stardust:deploy","phase":"convert","event":"end","detail":"local conversion + gates green; DA delivery pending"}
+{"ts":"2026-11-22T19:43:56Z","skill":"stardust:deploy","phase":"deliver","event":"end","detail":"11 pages previewed on site-v1; not published"}

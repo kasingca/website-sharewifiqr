@@ -1,0 +1,62 @@
+{
+  "media/site/blog-events.png": {
+    "status": "uploaded",
+    "file": "stardust/prototypes/media/blog-events.png",
+    "size": 138147,
+    "sha256": "2884ac63a70f880ad32452b4a907c210b16d71a8091019a949b9e82527d64097",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/kasingca/website-sharewifiqr/media/site/blog-events.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:10.037Z"
+  },
+  "media/site/blog-rentals.png": {
+    "status": "uploaded",
+    "file": "stardust/prototypes/media/blog-rentals.png",
+    "size": 149011,
+    "sha256": "ad34fc8adb4007df62b374ba692d3bd8869be1a5a663d1dd71e1d9d96a446d67",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/kasingca/website-sharewifiqr/media/site/blog-rentals.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:10.649Z"
+  },
+  "media/site/blog-home.png": {
+    "status": "uploaded",
+    "file": "stardust/prototypes/media/blog-home.png",
+    "size": 143249,
+    "sha256": "9d84e5acd5bc0051370ec5d7b0da7ec37996ecc63ebf506aa2a27f92953835b7",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/kasingca/website-sharewifiqr/media/site/blog-home.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:10.651Z"
+  },
+  "media/site/dashboard.png": {
+    "status": "uploaded",
+    "file": "stardust/prototypes/media/dashboard.png",
+    "size": 149499,
+    "sha256": "b8c762043264bf73f3dc080c9e6bf6e1774d2dc9f1d3e5cb71427e9515483cde",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/kasingca/website-sharewifiqr/media/site/dashboard.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:10.652Z"
+  },
+  "media/site/hero-guest-card.png": {
+    "status": "uploaded",
+    "file": "stardust/prototypes/media/hero-guest-card.png",
+    "size": 194788,
+    "sha256": "7351b01b807493ab805763f86898f32e0beb3d43078e36d48db62f98f8e3224f",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/kasingca/website-sharewifiqr/media/site/hero-guest-card.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-22T19:42:10.840Z"
+  }
+}

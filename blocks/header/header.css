@@ -53,14 +53,15 @@ header .nav-brand a:any-link {
   align-items: center;
   gap: 10px;
   font-family: var(--heading-font-family);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.1875rem;
+  font-weight: 780;
+  letter-spacing: -0.06em;
 }
 
 header .nav-brand .icon {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 4px 9px rgb(112 87 232 / 17%));
 }
 
 /* sections */

@@ -99,8 +99,8 @@
 }
 
 .section.dark .columns .columns-card {
-  border-color: oklch(36% 0.03 245deg);
-  background-color: oklch(28% 0.03 245deg);
+  border-color: #3a3452;
+  background-color: #2b2643;
 }
 
 .section.dark .columns .columns-card p {

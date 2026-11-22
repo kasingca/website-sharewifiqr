@@ -2,50 +2,51 @@
 name: Share Wifi QR
 description: Guests scan. They're online.
 colors:
-  paper: "oklch(0.985 0.008 85)"
-  paper-deep: "oklch(0.955 0.014 85)"
-  line: "oklch(0.885 0.012 85)"
-  ink: "oklch(0.24 0.03 245)"
-  ink-soft: "oklch(0.45 0.025 245)"
-  signal: "oklch(0.47 0.1 190)"
-  signal-deep: "oklch(0.39 0.085 190)"
-  signal-tint: "oklch(0.935 0.035 185)"
-  porch: "oklch(0.83 0.13 80)"
+  paper: "#ffffff"
+  paper-deep: "#f8f8fc"
+  line: "#e9e7f0"
+  ink: "#211d35"
+  ink-soft: "#6d6a80"
+  signal: "#654ce0"
+  signal-deep: "#533dc4"
+  signal-tint: "#f0ecff"
+  porch: "#a594ff"
 typography:
   display:
-    fontFamily: "Bricolage Grotesque, bricolage-fallback, sans-serif"
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "clamp(2.5rem, 5.2vw, 4.25rem)"
     fontWeight: 700
     lineHeight: 1.04
     letterSpacing: "-0.025em"
   headline:
-    fontFamily: "Bricolage Grotesque, bricolage-fallback, sans-serif"
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "clamp(1.875rem, 3.2vw, 2.625rem)"
     fontWeight: 700
     lineHeight: 1.1
     letterSpacing: "-0.02em"
   title:
-    fontFamily: "Bricolage Grotesque, bricolage-fallback, sans-serif"
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "1.25rem"
     fontWeight: 650
     lineHeight: 1.25
     letterSpacing: "-0.01em"
   body:
-    fontFamily: "Instrument Sans, instrument-fallback, sans-serif"
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "1.0625rem"
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "0em"
   label:
-    fontFamily: "Instrument Sans, instrument-fallback, sans-serif"
+    fontFamily: "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "0.8125rem"
     fontWeight: 600
     lineHeight: 1.3
     letterSpacing: "0.08em"
 rounded:
   sm: "6px"
-  md: "12px"
-  lg: "20px"
+  md: "10px"
+  lg: "13px"
+  button: "8px"
   pill: "999px"
 spacing:
   xs: "4px"
@@ -60,15 +61,15 @@ components:
   button-primary:
     backgroundColor: "{colors.signal}"
     textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
-    padding: "12px 24px"
+    rounded: "{rounded.button}"
+    padding: "10px 20px"
   button-primary-hover:
     backgroundColor: "{colors.signal-deep}"
   button-secondary:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "11px 23px"
+    rounded: "{rounded.button}"
+    padding: "9px 19px"
   card:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
@@ -95,20 +96,20 @@ Density is balanced: generous whitespace around a narrow set of ideas, one idea 
 
 **Key Characteristics:**
 - Warm off-white paper ground with deep blue-grey ink; no pure white, no pure black.
-- One functional accent (Signal teal) for actions and live data; a warm Porch amber used only as a highlight.
+- One functional accent (Signal purple, the portal's `--purple`) for actions and live data; a soft lavender Porch used only as a highlight.
 - Friendly grotesque display type set tight, with a quiet humanist sans for reading.
 - Pill buttons, softly rounded cards, hairline borders instead of heavy shadows.
 
 ## Colors
 
-A warm, papery neutral system with one teal action colour and an amber highlight.
+Matched to the portal (portal.sharewifiqr.com): white surfaces on a cool `#f8f8fc` canvas, `#211d35` ink, one purple action colour and a lavender highlight.
 
 ### Primary
 - **Signal Teal** (signal): every primary button, links, active states, and the "live" numbers in product mock-ups. It means *act here* or *this is real data*.
 - **Signal Deep** (signal-deep): hover and pressed state of Signal Teal; badge text.
 
 ### Secondary
-- **Porch Light** (porch): a warm amber highlight — the underline mark under a key word, the eyebrow dot, a single accent on dark bands. Never a button fill, never body text.
+- **Porch Light** (porch): a lavender highlight — the eyebrow dot and a single accent on dark bands. Never a button fill, never body text.
 
 ### Neutral
 - **Paper** (paper): the page ground and card fill.
@@ -119,15 +120,15 @@ A warm, papery neutral system with one teal action colour and an amber highlight
 - **Signal Tint** (signal-tint): badge and icon-tile backgrounds.
 
 ### Named Rules
-**The One Accent Rule.** Signal Teal covers less than 10% of any screen. If two things on screen are teal, one of them is not important.
+**The One Accent Rule.** Signal Purple covers less than 10% of any screen. If two things on screen are purple, one of them is not important.
 **The Porch Light Rule.** Amber appears at most once per section and never carries text that must be read.
 
 ## Typography
 
-**Display Font:** Bricolage Grotesque (with a metric-matched Arial fallback)
-**Body Font:** Instrument Sans (with a metric-matched Arial fallback)
+**Display Font:** Inter / system stack (same as the portal), weight ~760, tight tracking
+**Body Font:** Inter / system stack (same as the portal)
 
-**Character:** Bricolage brings warmth and a little personality to headlines without turning playful; Instrument Sans keeps long instructional copy crisp and neutral.
+**Character:** Identical type to the portal so moving from marketing site to app feels like one product.
 
 ### Hierarchy
 - **Display** (700, clamp 2.5–4.25rem, 1.04): the page `<h1>` only.
@@ -152,12 +153,12 @@ Depth comes from tonal bands and hairline borders, not shadows. Cards sit on Pap
 
 ## Shapes
 
-Gently rounded throughout: 6px for inputs and small tiles, 12px for images and icon tiles, 20px for cards and the hero artefact, full pills for buttons and badges. No sharp corners, no blobs, no diagonal section edges.
+Rounded like the portal: 6px for inputs and small tiles, 8px for buttons, 10px for images and icon tiles, 13px for cards, full pills only for badges.
 
 ## Components
 
 ### Buttons
-- **Shape:** full pill (999px).
+- **Shape:** 8px radius (portal `.button`).
 - **Primary:** Signal Teal fill, Paper text, 12px × 24px, label weight 600.
 - **Hover / Focus:** fill shifts to Signal Deep over 150ms; focus shows a 3px Signal Teal outline offset 3px.
 - **Secondary:** Paper fill, Ink text, 1px Ink border; hover fills Paper Deep.
@@ -174,7 +175,7 @@ Gently rounded throughout: 6px for inputs and small tiles, 12px for images and i
 - Signal Tint fill, Signal Deep text, label type, pill. Used for "Most popular", "Free", "Tracked".
 
 ### Navigation
-- Sticky Paper bar with a Hairline bottom border, 72px tall. Wordmark left, text links centre-right in Ink Soft (hover Ink), **Log in** as a secondary pill at the far right. Under 900px the links collapse behind a menu button; Log in stays visible.
+- Sticky Paper bar with a Hairline bottom border, 72px tall. Wordmark left, text links centre-right in Ink Soft (hover Ink), **Log in** as a primary button at the far right. Under 900px the links collapse behind a menu button; Log in stays visible.
 
 ### Guest Card (signature)
 The printed QR card: Paper fill, 20px radius, the printed-card lift, network name in Title type, the QR in Ink on Paper, a small "Scan with your camera" label. It is the hero image and recurs in blog articles.

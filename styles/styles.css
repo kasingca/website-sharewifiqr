@@ -347,12 +347,31 @@ main > .section > .default-content-wrapper + div {
   margin-top: 16px;
 }
 
-main > .section > .default-content-wrapper:has(+ div) {
-  max-width: var(--max-width);
+/* a section head above a card grid or FAQ is centred (layout reference) */
+main > .section > .default-content-wrapper:has(+ .cards-wrapper, + .accordion-wrapper) {
+  text-align: center;
 }
 
-main > .section > .default-content-wrapper:has(+ div) > * {
-  max-width: 720px;
+main > .section > .default-content-wrapper:has(+ .cards-wrapper, + .accordion-wrapper) > * {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+main > .section > .default-content-wrapper:has(+ .cards-wrapper, + .accordion-wrapper) .lede p {
+  margin-inline: auto;
+}
+
+main > .section > .accordion-wrapper .accordion {
+  margin-inline: auto;
+}
+
+main > .section > .default-content-wrapper:has(+ .cards-wrapper, + .accordion-wrapper) + div {
+  margin-top: 40px;
+}
+
+/* closing note after a block */
+main > .section > div + .default-content-wrapper {
+  text-align: center;
 }
 
 /* section styles (section-metadata Style) */
@@ -377,6 +396,20 @@ main .section.dark p {
 
 main .section.dark .lede p {
   color: var(--color-on-ink-soft);
+}
+
+main .section.dark .columns {
+  text-align: left;
+}
+
+main .section.dark .columns .lede p,
+main .section.dark .columns p {
+  margin-inline: 0;
+  color: var(--color-on-ink-soft);
+}
+
+main .section.dark .eyebrow p {
+  color: var(--color-porch);
 }
 
 main .section.dark p.button-wrapper {

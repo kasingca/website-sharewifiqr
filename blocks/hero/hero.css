@@ -1,16 +1,40 @@
-.hero > div {
-  display: grid;
-  grid-template-columns: 6fr 5fr;
-  gap: 40px;
-  align-items: center;
+.hero {
+  text-align: center;
+}
+
+.hero > div + div {
+  margin-top: 48px;
+}
+
+.hero .hero-copy > * {
+  margin-inline: auto;
+}
+
+.hero .hero-copy .eyebrow p {
+  padding: 6px 16px;
+  border: 1px solid var(--color-line);
+  border-radius: 999px;
+  background-color: var(--color-paper);
 }
 
 .hero .hero-copy h1 {
-  margin-bottom: 20px;
+  max-width: 16ch;
+  margin-bottom: 24px;
+  font-size: clamp(2.75rem, 6.4vw, 5rem);
+}
+
+.hero .hero-copy h1 strong {
+  font-weight: inherit;
+  color: var(--color-signal);
 }
 
 .hero .hero-copy .lede p {
-  max-width: 34ch;
+  max-width: 40ch;
+  margin-inline: auto;
+}
+
+.hero .hero-copy p.button-wrapper {
+  margin: 16px 6px 0;
 }
 
 .hero .hero-copy > p:last-child:not(.button-wrapper) {
@@ -19,26 +43,64 @@
   color: var(--color-ink-soft);
 }
 
-.hero .hero-media p {
+/* works-with row */
+.hero .hero-chips p {
+  margin: 0 auto 16px;
+  font-size: var(--label-font-size);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.hero .hero-chips ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 32px;
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero .hero-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.hero .hero-chips li .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* product window */
+.hero .hero-media p {
   max-width: none;
+  margin: 0;
   line-height: 0;
+}
+
+.hero .hero-media picture {
+  display: block;
 }
 
 .hero .hero-media img {
   width: 100%;
-  max-width: 520px;
-  aspect-ratio: 1432 / 1640;
+  max-width: 1080px;
+  aspect-ratio: 2352 / 1196;
   margin-inline: auto;
   object-fit: contain;
 }
 
-@media (width < 900px) {
-  .hero > div {
-    grid-template-columns: 1fr;
+@media (width < 600px) {
+  .hero .hero-copy p.button-wrapper {
+    display: block;
   }
 
-  .hero .hero-media img {
-    max-width: 400px;
+  .hero .hero-copy a.button {
+    width: 100%;
   }
 }

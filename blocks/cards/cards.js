@@ -12,8 +12,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      const imageOnly = div.querySelector('picture')
-        && !div.querySelector('h1, h2, h3, h4, ul, ol, p:not(:has(picture))');
+      const imageOnly = div.querySelector('picture, img')
+        && !div.querySelector('h1, h2, h3, h4, ul, ol, p:not(:has(picture, img))');
       div.className = imageOnly ? 'cards-card-image' : 'cards-card-body';
     });
     ul.append(li);

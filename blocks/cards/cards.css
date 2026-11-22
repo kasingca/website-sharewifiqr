@@ -62,7 +62,7 @@
   height: 24px;
 }
 
-/* steps: numbered cards */
+/* steps: large faint numerals over a short accent rule */
 .cards.steps > ul {
   counter-reset: step;
 }
@@ -72,18 +72,46 @@
 }
 
 .cards.steps .cards-card-body::before {
-  content: counter(step);
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  width: max-content;
   margin-bottom: 20px;
-  border-radius: 50%;
-  background-color: var(--color-ink);
-  color: var(--color-paper);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-signal);
   font-family: var(--heading-font-family);
-  font-size: 1.25rem;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 1;
+  color: var(--color-signal-tint);
+}
+
+/* chips: compact capability strip, title + caption */
+.cards.chips > ul {
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.cards.chips > ul > li {
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.cards.chips .cards-card-body {
+  padding: 16px 12px;
+}
+
+.cards.chips .cards-card-body p {
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  line-height: 1.35;
+  color: var(--color-ink-soft);
+}
+
+.cards.chips .cards-card-body p strong {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: var(--color-ink);
 }
 
 /* compare + pricing: check lists */
@@ -217,12 +245,20 @@
   .cards.compare > ul {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cards.chips > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (width < 600px) {
   .cards > ul,
   .cards.compare > ul {
     grid-template-columns: 1fr;
+  }
+
+  .cards.chips > ul {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cards .cards-card-body {

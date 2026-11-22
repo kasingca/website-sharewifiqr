@@ -1,13 +1,15 @@
 /**
- * Hero: one row, two cells — copy (eyebrow, h1, lede, CTAs, note) and media (picture).
- * Cells are classified by content, so authors may put the image first or second.
+ * Hero: centred stack, one cell per row.
+ * Rows are classified by content: copy (h1, lede, CTAs, note), a "works with" list,
+ * and the product media (picture). A two-cell row is supported too.
  * @param {Element} block The hero block element
  */
 export default function decorate(block) {
-  const cells = [...block.querySelectorAll(':scope > div > div')];
-  cells.forEach((cell) => {
-    const onlyMedia = cell.querySelector('picture') && !cell.querySelector('h1, h2, p:not(:has(picture))');
-    cell.classList.add(onlyMedia ? 'hero-media' : 'hero-copy');
+  block.querySelectorAll(':scope > div > div').forEach((cell) => {
+    if (cell.querySelector('h1, h2')) cell.classList.add('hero-copy');
+    else if (cell.querySelector('picture, img')) cell.classList.add('hero-media');
+    else if (cell.querySelector('ul')) cell.classList.add('hero-chips');
+    else cell.classList.add('hero-copy');
   });
 
   // the hero image is the LCP candidate: load it eagerly

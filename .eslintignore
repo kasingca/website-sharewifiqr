@@ -1,2 +1,3 @@
 helix-importer-ui
-*.min.jsstardust/
+*.min.js
+stardust/

@@ -1,0 +1,199 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:prototype",
+    "writtenAt": "2026-11-22T19:23:13Z",
+    "stardustVersion": "0.37.1"
+  },
+  "site": {
+    "originUrl": "https://sharewifiqr.com",
+    "deployUrl": "https://main--website-sharewifiqr--kasingca.aem.page",
+    "extractedAt": null,
+    "pageCap": null,
+    "totalDiscovered": 0,
+    "crawled": 0,
+    "layoutDonor": "https://geo.sourcedcode.com (capture blocked)"
+  },
+  "direction": {
+    "resolvedAt": "2026-11-22T19:24:00Z",
+    "phrase": "simple, professional marketing site for Share Wifi QR (layout like geo.sourcedcode.com), for da.live",
+    "directionFile": "stardust/direction.md",
+    "iaFidelity": "reimagined"
+  },
+  "pages": [
+    {
+      "slug": "home",
+      "url": "https://sharewifiqr.com/",
+      "title": "Home",
+      "type": "landing",
+      "status": "prototyped",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        },
+        {
+          "status": "prototyped",
+          "at": "2026-11-22T19:23:13Z"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": "stardust/prototypes/home.html",
+      "migratedPath": null
+    },
+    {
+      "slug": "pricing",
+      "url": "https://sharewifiqr.com/pricing",
+      "title": "Pricing",
+      "type": "pricing",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "faq",
+      "url": "https://sharewifiqr.com/faq",
+      "title": "FAQ",
+      "type": "faq",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog",
+      "url": "https://sharewifiqr.com/blog",
+      "title": "Blog",
+      "type": "listing",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-wifi-qr-code-for-home",
+      "url": "https://sharewifiqr.com/blog/wifi-qr-code-for-home",
+      "title": "How to make a Wi-Fi QR code for your home",
+      "type": "article",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-wifi-qr-code-for-events",
+      "url": "https://sharewifiqr.com/blog/wifi-qr-code-for-events",
+      "title": "Wi-Fi QR codes for weddings and private events",
+      "type": "article",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "blog-wifi-qr-code-for-rentals",
+      "url": "https://sharewifiqr.com/blog/wifi-qr-code-for-rentals",
+      "title": "Sharing Wi-Fi with rental guests",
+      "type": "article",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "privacy",
+      "url": "https://sharewifiqr.com/privacy",
+      "title": "Privacy Policy",
+      "type": "legal",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    },
+    {
+      "slug": "terms",
+      "url": "https://sharewifiqr.com/terms",
+      "title": "Terms of Service",
+      "type": "legal",
+      "status": "directed",
+      "history": [
+        {
+          "status": "directed",
+          "at": "2026-11-22T19:24:00Z",
+          "note": "greenfield — no extracted state (named deviation)"
+        }
+      ],
+      "stale": false,
+      "staleReason": null,
+      "currentStatePath": null,
+      "prototypePath": null,
+      "migratedPath": null
+    }
+  ]
+}

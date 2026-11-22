@@ -1,33 +1,49 @@
 .columns > div {
   display: flex;
   flex-direction: column;
-}
-
-.columns img {
-  width: 100%;
+  gap: 40px;
 }
 
 .columns > div > div {
-  order: 1;
+  min-width: 0;
 }
 
-.columns > div > .columns-img-col {
-  order: 0;
+.columns ul {
+  padding-left: 1.2em;
 }
 
-.columns > div > .columns-img-col img {
-  display: block;
+.columns li {
+  margin-bottom: 6px;
+}
+
+.columns .columns-img-col p {
+  margin: 12px 0 0;
+  font-size: var(--body-font-size-s);
+  color: var(--color-ink-soft);
+}
+
+.columns .columns-img-col p:has(picture) {
+  margin: 0;
+  max-width: none;
+  line-height: 0;
+}
+
+.columns .columns-img-col img {
+  width: 100%;
 }
 
 @media (width >= 900px) {
   .columns > div {
+    flex-direction: row;
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    gap: 64px;
   }
 
-  .columns > div > div {
-    flex: 1;
-    order: unset;
+  .columns.columns-2-cols > div > .columns-img-col {
+    flex: 7;
+  }
+
+  .columns.columns-2-cols > div > div:not(.columns-img-col) {
+    flex: 5;
   }
 }

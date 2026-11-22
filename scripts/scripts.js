@@ -143,6 +143,39 @@ function decorateButtons(main) {
 }
 
 /**
+ * Wraps an authored element in a styling wrapper without rebuilding it.
+ * @param {Element} el The authored element
+ * @param {string} className The wrapper class
+ */
+function wrapIn(el, className) {
+  const wrapper = document.createElement('div');
+  wrapper.className = className;
+  el.before(wrapper);
+  wrapper.append(el);
+}
+
+/**
+ * Marks the short paragraph above a heading as its eyebrow and the paragraph
+ * below an h1/h2 as its lede. Elements are moved, never rebuilt, so they stay
+ * editable in the Experience Workspace.
+ * @param {Element} main The container element
+ */
+function decorateSectionHeads(main) {
+  const isProse = (el) => el && el.tagName === 'P'
+    && !el.classList.contains('button-wrapper')
+    && !el.querySelector('picture, img, .icon');
+  main.querySelectorAll('h1, h2, h3').forEach((heading) => {
+    if (heading.tagName === 'H3' && !heading.closest('.cards')) return;
+    const prev = heading.previousElementSibling;
+    // a heading only gets a head (eyebrow/lede) when it opens its container
+    if (prev && (prev.previousElementSibling || !isProse(prev))) return;
+    if (prev && prev.textContent.trim().length <= 60) wrapIn(prev, 'eyebrow');
+    const next = heading.nextElementSibling;
+    if (heading.tagName !== 'H3' && isProse(next)) wrapIn(next, 'lede');
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -153,6 +186,11 @@ export function decorateMain(main) {
   decorateSections(main);
   decorateBlocks(main);
   decorateButtons(main);
+  decorateSectionHeads(main);
+  // section-metadata "Id" rows become in-page anchors (e.g. /#features)
+  main.querySelectorAll(':scope > .section[data-id]').forEach((section) => {
+    section.id = section.dataset.id;
+  });
 }
 
 /**

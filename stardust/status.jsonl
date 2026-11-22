@@ -1,0 +1,5 @@
+{"ts":"2026-11-22T19:13:51Z","skill":"stardust:extract","phase":"discovery","event":"start","detail":"donor layout capture: geo.sourcedcode.com"}
+{"ts":"2026-11-22T19:15:19Z","skill":"stardust:extract","phase":"discovery","event":"blocked","detail":"donor geo.sourcedcode.com behind Cloudflare interactive challenge; capture skipped, layout authored from intent"}
+{"ts":"2026-11-22T19:18:50Z","skill":"stardust:direct","phase":"reasoning","event":"start"}
+{"ts":"2026-11-22T19:18:50Z","skill":"stardust:direct","phase":"reasoning","event":"end","detail":"greenfield direction written"}
+{"ts":"2026-11-22T19:32:40Z","skill":"stardust:deploy","phase":"convert","event":"end","detail":"local conversion + gates green; DA delivery pending"}

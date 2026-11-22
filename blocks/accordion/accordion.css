@@ -1,0 +1,59 @@
+.accordion {
+  max-width: 820px;
+  border-top: 1px solid var(--color-line);
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.accordion .accordion-head {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.accordion .accordion-title p,
+.accordion .accordion-title h3 {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 1.1875rem;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+.accordion .accordion-toggle {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-signal-tint) url('../../icons/plus.svg') center / 14px no-repeat;
+  cursor: pointer;
+  transition: transform 150ms;
+}
+
+.accordion .accordion-item.open .accordion-toggle {
+  transform: rotate(45deg);
+}
+
+.accordion .accordion-panel {
+  padding: 0 56px 20px 0;
+  color: var(--color-ink-soft);
+}
+
+.accordion .accordion-panel > :last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion .accordion-toggle {
+    transition: none;
+  }
+}

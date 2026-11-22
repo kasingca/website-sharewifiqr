@@ -168,8 +168,29 @@
 }
 
 /* pricing */
+
+/* highlighted plan: ring drawn outside the 1px border so content lines up with its siblings */
 .cards.pricing > ul > li:has(.eyebrow) {
-  border: 2px solid var(--color-signal);
+  position: relative;
+  overflow: visible;
+  border-color: var(--color-signal);
+  box-shadow: 0 0 0 1px var(--color-signal);
+}
+
+/* "Most popular" badge sits on the top edge instead of pushing the content down */
+.cards.pricing .cards-card-body > .eyebrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cards.pricing .cards-card-body > .eyebrow p {
+  margin: 0;
+  border: 1px solid var(--color-signal);
+  background-color: var(--color-signal-tint);
 }
 
 .cards.pricing .cards-card-body p:has(> strong:first-child):not(.button-wrapper) {
@@ -188,6 +209,13 @@
 
 .cards.pricing .cards-card-body ul {
   margin: 8px 0 24px;
+}
+
+/* side by side, reserve two lines for each plan's tagline so the feature lists line up */
+@media (width >= 600px) {
+  .cards.pricing .cards-card-body p:has(> strong:first-child):not(.button-wrapper) + p {
+    min-height: 3.2em;
+  }
 }
 
 .cards.pricing .cards-card-body p.button-wrapper {
